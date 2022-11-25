@@ -30,4 +30,12 @@ GitHub Actions - The Complete Guide by Maximilian Schwarzmüller
    - Steps are executed in order
    - Can be conditional
 
+### 36. Creating a First Workflow
+
+1. Create a new repo `gh-first-action`
+2. Actions tab -> Configure
+3. write the first workflow
+
+[Supported runners and hardware resources](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources)
+
 </details>
