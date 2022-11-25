@@ -38,4 +38,10 @@ GitHub Actions - The Complete Guide by Maximilian Schwarzmüller
 
 [Supported runners and hardware resources](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources)
 
+### 37. Running the First Workflow
+
+1. Commit the changes on the web
+2. Actions -> First Workflow
+3. Navigate to see the details
+
 </details>
