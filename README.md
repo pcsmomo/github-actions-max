@@ -66,4 +66,18 @@ GitHub Actions - The Complete Guide by Maximilian Schwarzmüller
 
 [GitHub Actions Events](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows)
 
+### 41. Using Actions In Workflows
+
+- Command("run")
+  - A (typically simple) shell command that's defined by you
+- Action
+  - A (custom) application that performs a (typically complex) frequently repeated task
+  - You can build your won Actions but you can also use official or community Actions
+
+#### Github Actions `checkout`
+
+- [GitHub Actions checkout][https://github.com/actions/checkout] - Created by GitHub team
+- You can browse different actions (free), https://github.com/marketplace/actions/checkout
+- Marketplace - Actions - https://github.com/marketplace?category=&query=&type=actions&verification=
+
 </details>
