@@ -44,4 +44,26 @@ GitHub Actions - The Complete Guide by Maximilian Schwarzmüller
 2. Actions -> First Workflow
 3. Navigate to see the details
 
+### 40. A New Workflow & The "push" Event
+
+#### Event (Workflow Triggers)
+
+- Repository-related
+  - push
+  - pull-request : (opened, closed, ...)
+  - create
+  - folk
+  - issues
+  - issue_comment
+  - watch
+  - discussion : (created, deleted, ...)
+  - many more!
+- Other
+  - workflow_dispatch : manually trigger workflow
+  - repository_dispatch : REST API request triggers workflow
+  - schedule : Workflow is scheduled
+  - workflow_call : Can be called by other workflows
+
+[GitHub Actions Events](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows)
+
 </details>
