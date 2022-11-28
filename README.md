@@ -80,4 +80,8 @@ GitHub Actions - The Complete Guide by Maximilian Schwarzmüller
 - You can browse different actions (free), https://github.com/marketplace/actions/checkout
 - Marketplace - Actions - https://github.com/marketplace?category=&query=&type=actions&verification=
 
+### 42. Checking Out Code In Workflows
+
+[actions/checkout@v3 - https://github.com/actions/checkout#usage](https://github.com/actions/checkout#usage)
+
 </details>
