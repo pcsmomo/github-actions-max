@@ -84,4 +84,17 @@ GitHub Actions - The Complete Guide by Maximilian Schwarzmüller
 
 [actions/checkout@v3 - https://github.com/actions/checkout#usage](https://github.com/actions/checkout#usage)
 
+### 43. Configuring Actions
+
+1. https://github.com/actions/runner-images
+   - find ubuntu-latest
+   - or see here, https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-software
+2. https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2004-Readme.md
+   - check installed software
+   - `Node 16.18.1`
+
+> if node is not installed? \
+> Add a step for it: https://github.com/actions/setup-node#usage
+> in this course, add the step for practice as it's not harmful 🤣
+
 </details>
