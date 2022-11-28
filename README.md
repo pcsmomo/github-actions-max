@@ -97,4 +97,8 @@ GitHub Actions - The Complete Guide by Maximilian Schwarzmüller
 > Add a step for it: https://github.com/actions/setup-node#usage
 > in this course, add the step for practice as it's not harmful 🤣
 
+### 46. Adding Multiple Jobs
+
+\*Every job gets its own runner - its own virtual machine that's totally isolated from otehr machines and jobs
+
 </details>
