@@ -101,4 +101,15 @@ GitHub Actions - The Complete Guide by Maximilian Schwarzmüller
 
 \*Every job gets its own runner - its own virtual machine that's totally isolated from otehr machines and jobs
 
+### 49. Expressions & Context Objects
+
+```yml
+# output.yml
+run: echo "${{ toJson(github) }}"
+```
+
+To use metadata from GitHub
+
+[Github Actions Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts)
+
 </details>
