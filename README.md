@@ -176,4 +176,25 @@ To use metadata from GitHub
 
 [GitHub Actions download-artifact](https://github.com/actions/download-artifact)
 
+### 69. Understanding Job Outputs
+
+- Artifacts : Output files & folders
+- Job Outputs : Simple values
+  - e.g. hash values and so on
+
+### 70. Job Outputs - An Example
+
+```sh
+# it displays the randomly hashed file name
+find dist/assets/*js -type f -execdir echo 'script-file={}' ';'
+# script-file=index.047b9b6b.js
+```
+
+[GitHub Actions Context : steps](https://docs.github.com/en/actions/learn-github-actions/contexts#steps-context)
+
+- `steps.<step_id>.outputs.<output_name>`
+  - `script-file: ${{ steps.publish.outputs.script-file }}`
+- `run: find dist/assets/*js -type f execdir echo 'script-file={}' >> $GITHUB_OUTPUT ';'`
+  - old way: `run: find dist/assets/*js -type f execdir echo '::set-output name=script-file::{}' ';'`
+
 </details>
