@@ -112,4 +112,15 @@ To use metadata from GitHub
 
 [Github Actions Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts)
 
+### 58. Using Activity Types
+
+- Events
+  - Activity types
+    - [pull_request](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request)
+      - opened, closed, edited
+      - default for `pull_request`: opened, synchronize, or reopened
+  - Filters
+    - push
+      - Filter based on target branch
+
 </details>
