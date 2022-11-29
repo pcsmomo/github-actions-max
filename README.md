@@ -4,7 +4,10 @@ GitHub Actions - The Complete Guide by Maximilian Schwarzmüller
 
 ## Folder structure
 
--
+- example-prj-gui-vite
+  - based on 04-events-deep-dive
+- example-prj-server-node
+  - based on 06
 
 ## Details
 
