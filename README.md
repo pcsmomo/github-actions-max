@@ -172,4 +172,8 @@ To use metadata from GitHub
 
 > And we can actually download the asset on the action page on the browser
 
+### 68. Downloading Artifacts (Manually & Automatically)
+
+[GitHub Actions download-artifact](https://github.com/actions/download-artifact)
+
 </details>
