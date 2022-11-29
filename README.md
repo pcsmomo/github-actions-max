@@ -140,4 +140,19 @@ To use metadata from GitHub
   - Malicious workflow runs & excess cost could be caused
 - First-time contributors must be approved manually
 
+### 61. Cancelling Workflows & Skipping Workflows
+
+[Skipping workflow runs](https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs)
+
+- add any of the following strings to the commit message in a push, or the HEAD commit of a pull request:
+  - [skip ci]
+  - [ci skip]
+  - [no ci]
+  - [skip actions]
+  - [actions skip]
+  - [skip ci]
+- Alternatively, you can end the commit message with two empty lines followed by either:
+  - skip-checks:true
+  - skip-checks: true
+
 </details>
