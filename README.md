@@ -133,4 +133,11 @@ To use metadata from GitHub
           - '.github/workflows/*' # the action will not trigger, as we changed this file
         ```
 
+### 60. Special Behavior: Forks & Pull Request Events
+
+- By default, Pull Request based on Forks do NOT trigger a workflow
+- Reason: Everyone can forl & open pull requests
+  - Malicious workflow runs & excess cost could be caused
+- First-time contributors must be approved manually
+
 </details>
