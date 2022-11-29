@@ -155,4 +155,15 @@ To use metadata from GitHub
   - skip-checks:true
   - skip-checks: true
 
+## Section 5: Job Artifacts & Outputs
+
+### 65. Understanding Job Artifacts
+
+- Job -> Example: Build app
+- Output Asset(s) - Example: App binary, website files etc.
+  - download & use manually
+    - Via GitHub UI or REST API
+  - download & use in other jobs
+    - Via Action
+
 </details>
