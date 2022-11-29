@@ -116,11 +116,21 @@ To use metadata from GitHub
 
 - Events
   - Activity types
-    - [pull_request](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request)
+    - pull_request
       - opened, closed, edited
       - default for `pull_request`: opened, synchronize, or reopened
+      - https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request
   - Filters
     - push
       - Filter based on target branch
+      - https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onpushbranchestagsbranches-ignoretags-ignore
+        ```yml
+        branches:
+          - main # main
+          - 'dev-*' # * doesn't count "/", e.g. dev-new, dev-this-is-new
+          - 'feat/**' # ** includes "/" as well, e.g. feat/new, feat/new/button
+        paths-ignore:
+          - '.github/workflows/*' # the action will not trigger, as we changed this file
+        ```
 
 </details>

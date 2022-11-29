@@ -8,6 +8,14 @@ on:
     # types:
     #   opened
   workflow_dispatch:
+  push:
+    branches:
+      - main # main
+      - 'dev-*' # * doesn't count "/", e.g. dev-new, dev-this-is-new
+      - 'feat/**' # ** includes "/" as well, e.g. feat/new, feat/new/button
+      # developer-1
+    paths-ignore:
+      - '.github/workflows/*' # the action will not trigger, as we changed this file
 jobs:
   deploy:
     runs-on: ubuntu-latest
