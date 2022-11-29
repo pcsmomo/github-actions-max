@@ -160,10 +160,16 @@ To use metadata from GitHub
 ### 65. Understanding Job Artifacts
 
 - Job -> Example: Build app
-- Output Asset(s) - Example: App binary, website files etc.
+- Output Asset(s) - Example: App binary, website files, build or dist etc.
   - download & use manually
     - Via GitHub UI or REST API
   - download & use in other jobs
     - Via Action
+
+### 67. Uploading Job Artifacts
+
+[GitHub Actions upload-artifact](https://github.com/actions/upload-artifact)
+
+> And we can actually download the asset on the action page on the browser
 
 </details>
