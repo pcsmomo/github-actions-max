@@ -194,7 +194,11 @@ find dist/assets/*js -type f -execdir echo 'script-file={}' ';'
 
 - `steps.<step_id>.outputs.<output_name>`
   - `script-file: ${{ steps.publish.outputs.script-file }}`
-- `run: find dist/assets/*js -type f execdir echo 'script-file={}' >> $GITHUB_OUTPUT ';'`
-  - old way: `run: find dist/assets/*js -type f execdir echo '::set-output name=script-file::{}' ';'`
+- `run: find dist/assets/*js -type f -execdir echo 'script-file={}' >> $GITHUB_OUTPUT ';'`
+  - old way: `run: find dist/assets/*js -type f -execdir echo '::set-output name=script-file::{}' ';'`
+
+### 71. Using Job Outputs In Other Jobs
+
+[GitHub Actions Context : needs](https://docs.github.com/en/actions/learn-github-actions/contexts#needs-context)
 
 </details>
