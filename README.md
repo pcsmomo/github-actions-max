@@ -295,4 +295,14 @@ and it can be used in different jobs.
 3. Can set deployment branch on the environment, if it is set to `main`, \
    `test` job in `dev` branch will fail
 
+## Section 7: Controlling Workflow & Job Execution
+
+### 86. Understanding Conditional Steps & Jobs
+
+- Jobs
+  - Conditional execution via `if` field
+- Steps
+  - Conditional execution via `if` field
+  - Ignore erros via `continue-on-error` field
+
 </details>
