@@ -233,4 +233,23 @@ Cache saved with key: deps-node-modules-c5817646ecce628028344231f22da9f284ccc9cd
 > Caching is not for `Artifacts` nor `Outputs`. It's for like dependencies to speed up the workflow.\
 > Don't use caching for artifacts. Artifact is output from workflows which are results that we're interested in.
 
+### 75. Module Summary
+
+- Artifacts
+  - Jobs often product assets that should be shared or analyzed
+  - Example: Deployable website files, logs, binaries etc.
+  - These assets are referred to as "Artifacts" or (Job Artifacts")
+  - GitHub Actions provides Actions for uploading & downloading
+- Outputs
+  - Besides Artifacts, Steps can product and share simple values
+  - These outputs are shared via `echo '{output-name}={output-value' >> $GITHUB_OUTPUT`
+  - Jobs can pick up & share Step outputs via the `steps` context
+  - Other Jobs can use Job outputs via the `needs` context
+- Caching
+  - Caching can help speed up repeated, slow Steps
+  - Typical use-case: Caching dependencies
+  - But only files & folder can be cached
+  - The cache Action automatically stores & updates cache values (based on the cache key)
+  - Important: Don't use caching for artifacts!
+
 </details>
