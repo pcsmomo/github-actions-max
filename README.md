@@ -274,9 +274,25 @@ Cache saved with key: deps-node-modules-c5817646ecce628028344231f22da9f284ccc9cd
 1. Repo -> Settings -> Security -> Secrets -> Actions -> add New repository secret
 2. MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
 3. secrets won't be printed or echoed (github action takes care of secrets)
-   ```sh
+   ```yml
    Run echo "MONGODB_USERNAME: ***"
    MONGODB_USERNAME: ***
    ```
+
+### 83. Utilizing Repository Environments
+
+We can set secrets in different environments we define (e.g. testing, build, etc. ). \
+and it can be used in different jobs.
+
+1. Repo -> Settings -> Code and automation -> Environments (not provided for private repo on free plan)
+2. add `testing` environment and add secrets
+   ```yml
+   jobs:
+     test:
+       environment: testing
+       runs-on: ubuntu-latest
+   ```
+3. Can set deployment branch on the environment, if it is set to `main`, \
+   `test` job in `dev` branch will fail
 
 </details>
