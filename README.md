@@ -265,4 +265,18 @@ Cache saved with key: deps-node-modules-c5817646ecce628028344231f22da9f284ccc9cd
 
 [Playwright: E2E(End To End) testing tool for node](https://playwright.dev/)
 
+### 81. Default Environment Variables
+
+[GitHub Actions Environment variables](https://docs.github.com/en/actions/learn-github-actions/environment-variables#default-environment-variables)
+
+### 82. Understanding & Using Secrets
+
+1. Repo -> Settings -> Security -> Secrets -> Actions -> add New repository secret
+2. MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+3. secrets won't be printed or echoed (github action takes care of secrets)
+   ```sh
+   Run echo "MONGODB_USERNAME: ***"
+   MONGODB_USERNAME: ***
+   ```
+
 </details>
