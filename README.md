@@ -204,4 +204,33 @@ find dist/assets/*js -type f -execdir echo 'script-file={}' ';'
 
 [GitHub Actions Context : needs](https://docs.github.com/en/actions/learn-github-actions/contexts#needs-context)
 
+### 72. The Need For Dependency Caching
+
+To remove repeated actions
+
+### 73. Caching Dependencies in Practice
+
+- [GitHub Actions cache](https://github.com/actions/cache)
+  - and [the example for Node - npm](https://github.com/actions/cache/blob/main/examples.md#node---npm)
+
+```sh
+# after push
+
+# Cache dependencies
+Run actions/cache@v3
+Cache not found for input keys: deps-node-modules-c5817646ecce628028344231f22da9f284ccc9cddba928e0f971156ee2b0b772
+
+# Post Cache dependencies
+Post job cleanup.
+/usr/bin/tar --posix --use-compress-program zstdmt -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/gh-05-artifacts/gh-05-artifacts --files-from manifest.txt
+Cache Size: ~16 MB (17095001 B)
+Cache saved successfully
+Cache saved with key: deps-node-modules-c5817646ecce628028344231f22da9f284ccc9cddba928e0f971156ee2b0b772
+```
+
+> it will still be cahced, next ci builds until `package-lock.json` file changes after updating or install npm packages
+
+> Caching is not for `Artifacts` nor `Outputs`. It's for like dependencies to speed up the workflow.\
+> Don't use caching for artifacts. Artifact is output from workflows which are results that we're interested in.
+
 </details>
