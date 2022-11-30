@@ -9,6 +9,13 @@ GitHub Actions - The Complete Guide by Maximilian Schwarzmüller
 - example-prj-server-node
   - based on 06
 
+### base example-prj
+
+- 03-basics (example-prj-gui-vite)
+- 04-events-deep-dive (example-prj-gui-vite)
+- 05-artifacts-outputs (example-prj-gui-vite)
+- 06-env-vars-secrets (example-prj-server-node)
+
 ## Details
 
 <details open>
@@ -251,5 +258,11 @@ Cache saved with key: deps-node-modules-c5817646ecce628028344231f22da9f284ccc9cd
   - But only files & folder can be cached
   - The cache Action automatically stores & updates cache values (based on the cache key)
   - Important: Don't use caching for artifacts!
+
+## Section 6: Using Environment Variables & Secrets
+
+### 77. Project Setup & Understanding Environment Variables
+
+[Playwright: E2E(End To End) testing tool for node](https://playwright.dev/)
 
 </details>
