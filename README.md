@@ -328,4 +328,11 @@ and it can be used in different jobs.
 - [GitHub Actions cache](https://github.com/actions/cache)
 - `cache-hit` - A boolean value to indicate an exact match was found for the key.
 
+### 93. Ignoring Errors & Failures with "continue-on-error"
+
+- `continue-on-error: true`
+  - it continues `build` job even `test` job failed
+- `if: failure() && steps.run-tests.outcome == 'failure'`
+  - it doesn't go `build` job as `test` job failed
+
 </details>
