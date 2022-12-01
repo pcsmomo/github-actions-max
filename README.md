@@ -340,4 +340,10 @@ and it can be used in different jobs.
 - [GitHib Actions Matrix](https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs)
 - so the `matrix.tml` runs 6 builds!!!
 
+### 95. Including & Excluding Values (Matrix Strategy)
+
+- `include` or `exclude`
+  - when we don't want to run all combinations
+  - https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#expanding-or-adding-matrix-configurations
+
 </details>
