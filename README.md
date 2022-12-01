@@ -310,4 +310,17 @@ and it can be used in different jobs.
 - [GitHub Actions Context : steps](https://docs.github.com/en/actions/learn-github-actions/contexts#steps-context)
 - [GitHub Actions Expression : operators](https://docs.github.com/en/actions/learn-github-actions/expressions#operators)
 
+### 90. Working with Special Conditional Functions
+
+[GitHub Actions Expression : Status check functions](https://docs.github.com/en/actions/learn-github-actions/expressions#status-check-functions)
+
+- `failure()`
+  - returns `true` when any previous Step or Job failed
+- `success()`
+  - returns `true` when none of the previous steps have failed
+- `always()`
+  - causes the step to always execute, event when cancelled
+- `cancelled()`
+  - returns `true` if the workflow has been cancelled
+
 </details>
