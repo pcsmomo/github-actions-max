@@ -323,4 +323,9 @@ and it can be used in different jobs.
 - `cancelled()`
   - returns `true` if the workflow has been cancelled
 
+### 92. More "if" Examples
+
+- [GitHub Actions cache](https://github.com/actions/cache)
+- `cache-hit` - A boolean value to indicate an exact match was found for the key.
+
 </details>
