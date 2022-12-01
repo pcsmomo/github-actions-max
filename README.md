@@ -335,4 +335,9 @@ and it can be used in different jobs.
 - `if: failure() && steps.run-tests.outcome == 'failure'`
   - it doesn't go `build` job as `test` job failed
 
+### 94. Understanding & Using Matrix Strategies
+
+- [GitHib Actions Matrix](https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs)
+- so the `matrix.tml` runs 6 builds!!!
+
 </details>
