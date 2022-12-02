@@ -363,4 +363,20 @@ and it can be used in different jobs.
 
 [GitHub Actions - Run job sin a container](https://docs.github.com/en/actions/using-jobs/running-jobs-in-a-container)
 
+### 106. Service Containers - Theory
+
+Service Container
+
+- Example: Hosts a testing database
+- Runs inside a container (hosted by the Runner)
+- Job steps can communicate with service containers \
+  (and the services exposed by them)
+
+### 107. Adding Services (via Service Containers)
+
+Since we could use the `service container` in the test job, \
+We don't need to use container (no benefit for this scenario)
+
+[GitHub Actions - Containerized services](https://docs.github.com/en/actions/using-containerized-services/about-service-containers)
+
 </details>
