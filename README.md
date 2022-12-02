@@ -6,15 +6,12 @@ GitHub Actions - The Complete Guide by Maximilian Schwarzmüller
 
 - example-prj-gui-vite
   - based on 04-events-deep-dive
+  - 03-basics
+  - 05-artifacts-outputs
+  - 07-execution-flow
 - example-prj-server-node
   - based on 06-env-vars-secrets
-
-### base example-prj
-
-- 03-basics (example-prj-gui-vite)
-- 04-events-deep-dive (example-prj-gui-vite)
-- 05-artifacts-outputs (example-prj-gui-vite)
-- 06-env-vars-secrets (example-prj-server-node)
+  - 08-docker-containers
 
 ## Details
 
@@ -353,5 +350,13 @@ and it can be used in different jobs.
 ### 97. Adding Inputs to Reusable Workflows
 
 - [GitHub Actions Context : inputs](https://docs.github.com/en/actions/learn-github-actions/contexts#inputs-context)
+
+## Section 8: Jobs & Docker Containers
+
+### 101. Module Introduction
+
+- Containers - A Re-introduction
+- Running Jobs in Containers
+- Using Service Containers
 
 </details>
