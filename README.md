@@ -346,4 +346,8 @@ and it can be used in different jobs.
   - when we don't want to run all combinations
   - https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs#expanding-or-adding-matrix-configurations
 
+### 96. Saving Time & Code with Reusable Workflows
+
+[GitHub Actions Events: workflow_call](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_call)
+
 </details>
