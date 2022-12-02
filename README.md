@@ -350,4 +350,8 @@ and it can be used in different jobs.
 
 [GitHub Actions Events: workflow_call](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_call)
 
+### 97. Adding Inputs to Reusable Workflows
+
+- [GitHub Actions Context : inputs](https://docs.github.com/en/actions/learn-github-actions/contexts#inputs-context)
+
 </details>
