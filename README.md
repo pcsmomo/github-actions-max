@@ -391,4 +391,19 @@ We don't need to use container (no benefit for this scenario)
 - No exsiting (community) action
   - existing, public actions might not solve the specific problem you have in your workflow
 
+### 112. Understanding Different Types of Custom Actions
+
+- JavaScript Actions
+  - Execute a JavaScript file
+  - Use JavaScript (NodeJS) + any packages of your choice
+  - Pretty straightforward (if you know JavaScript)
+- Docker Actions
+  - Create a Dockerfile with your required configuration
+  - Perform any task(s) of your choice with any language
+  - Lots of flexibility but requires Docker knowledge
+- Composit Actions
+  - Combine multiple Workflow Steps in one single Action
+  - Combine `run` (commands) and `uses` (Actions)
+  - Allows for reusing shared Steps (without extra skils)
+
 </details>
