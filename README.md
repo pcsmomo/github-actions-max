@@ -9,6 +9,7 @@ GitHub Actions - The Complete Guide by Maximilian Schwarzmüller
   - 03-basics
   - 05-artifacts-outputs
   - 07-execution-flow
+  - 09-custom-actions
 - example-prj-server-node
   - based on 06-env-vars-secrets
   - 08-docker-containers
@@ -378,5 +379,16 @@ Since we could use the `service container` in the test job, \
 We don't need to use container (no benefit for this scenario)
 
 [GitHub Actions - Containerized services](https://docs.github.com/en/actions/using-containerized-services/about-service-containers)
+
+## Section 9: Building & Using Custom Actions
+
+### 111. Why Custom Actions?
+
+- Simplify workflow steps
+  - instead of writing multiple (possibly very complex) step definitions,\
+    you can build and use a single custom action
+  - multiple steps can be grouped into a single custom action
+- No exsiting (community) action
+  - existing, public actions might not solve the specific problem you have in your workflow
 
 </details>
