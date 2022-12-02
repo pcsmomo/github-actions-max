@@ -11,11 +11,11 @@ jobs:
   test:
     environment: testing
     runs-on: ubuntu-latest
-    # container:
-    #   image: node:16  # from docker hub
+    container:
+      image: node:16  # from docker hub
     env:
-      MONGODB_CONNECTION_PROTOCOL: mongodb+srv
-      MONGODB_CLUSTER_ADDRESS: noahcluster.pvxa3.mongodb.net
+      MONGODB_CONNECTION_PROTOCOL: mongodb
+      MONGODB_CLUSTER_ADDRESS: mongodb
       MONGODB_USERNAME: root
       MONGODB_PASSWORD: example
       PORT: 8080
