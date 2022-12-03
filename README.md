@@ -433,4 +433,33 @@ npm install @actions/core @actions/github @actions/exec
 > Actually, `@actions/core`, `@actions/github`, and `@actions/exec` are \
 > included in the [`actions/toolkit`](https://github.com/actions/toolkit)
 
+### 121. Creating a S3 Bucket (for a more advanced, custom Action)
+
+- AWS -> Create bucket
+  - bucket name: gha-custom-action-hosting
+  - AWS Region: ap-southeast-2
+  - Unckeck - Block all public access
+    - Check that I acknowledge about it
+- `gha-custom-action-hosting` bucket -> properties -> Static website hosting
+  - enable
+  - index document: index.html
+- `gha-custom-action-hosting` bucket -> permissions -> Bucket policy [Edit]
+  - click `Policy examples`
+    - Granting read-only permission to an anonymous user
+      ```json
+      {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Sid": "PublicRead",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": ["s3:GetObject", "s3:GetObjectVersion"],
+            "Resource": ["arn:aws:s3:::DOC-EXAMPLE-BUCKET/*"]
+          }
+        ]
+      }
+      ```
+    - replace `DOC-EXAMPLE-BUCKET` to my bucket name
+
 </details>
