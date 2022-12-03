@@ -12,6 +12,8 @@ jobs:
       - name: Load & cache dependencies
         uses: ./.github/actions/cached-deps   # must be absolute path
         # uses: maxacademy1/my-action # github repo
+        with:
+          caching: 'false'
       - name: Lint code
         run: npm run lint
   test:

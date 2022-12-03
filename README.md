@@ -10,6 +10,9 @@ GitHub Actions - The Complete Guide by Maximilian Schwarzmüller
   - 05-artifacts-outputs
   - 07-execution-flow
   - 09-custom-actions
+    - actions/cached-deps : composite
+    - actions/deploy-s3-javascript : javascript
+    - actions/deploy-s3-docker : docker
 - example-prj-server-node
   - based on 06-env-vars-secrets
   - 08-docker-containers
