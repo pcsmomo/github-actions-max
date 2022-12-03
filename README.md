@@ -406,4 +406,11 @@ We don't need to use container (no benefit for this scenario)
   - Combine `run` (commands) and `uses` (Actions)
   - Allows for reusing shared Steps (without extra skils)
 
+### 114. Creating Composite Actions
+
+[GitHub Actions - composite action ](https://docs.github.com/en/actions/creating-actions/creating-a-composite-action)
+
+- no need `on`
+- need to add `shell: bash` for command line
+
 </details>
