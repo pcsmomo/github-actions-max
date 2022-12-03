@@ -416,4 +416,8 @@ We don't need to use container (no benefit for this scenario)
 - no need `on`
 - need to add `shell: bash` for command line
 
+### 118. Custom JavaScript Actions - Getting Started
+
+[GitHub Actions - javascript action](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runs-for-javascript-actions)
+
 </details>
