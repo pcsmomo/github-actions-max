@@ -1,0 +1,3 @@
+# Include node_modules and `dist` under node_modules
+!node_modules/
+!dist

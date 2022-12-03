@@ -12,6 +12,7 @@ GitHub Actions - The Complete Guide by Maximilian Schwarzmüller
   - 09-custom-actions
     - actions/cached-deps : composite
     - actions/deploy-s3-javascript : javascript
+      - when deploy, `node_modules` must be installed and included
     - actions/deploy-s3-docker : docker
 - example-prj-server-node
   - based on 06-env-vars-secrets
@@ -419,5 +420,17 @@ We don't need to use container (no benefit for this scenario)
 ### 118. Custom JavaScript Actions - Getting Started
 
 [GitHub Actions - javascript action](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runs-for-javascript-actions)
+
+### 120. Adding Basic JavaScript Logic
+
+```sh
+# 09-custom-actions/.github/actions/deploy-s3-javascript
+npm init -y
+
+npm install @actions/core @actions/github @actions/exec
+```
+
+> Actually, `@actions/core`, `@actions/github`, and `@actions/exec` are \
+> included in the [`actions/toolkit`](https://github.com/actions/toolkit)
 
 </details>
