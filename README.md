@@ -462,4 +462,17 @@ npm install @actions/core @actions/github @actions/exec
       ```
     - replace `DOC-EXAMPLE-BUCKET` to my bucket name
 
+### 123. Interacting with GitHub Actions Features
+
+#### Upload files
+
+1. Using AWS SDK
+   - https://aws.amazon.com/developer/tools/
+2. Via the code
+
+```js
+const github = require('@actions/github'); // this is for using the other context if needed
+// github.context.
+```
+
 </details>
