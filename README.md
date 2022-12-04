@@ -466,13 +466,25 @@ npm install @actions/core @actions/github @actions/exec
 
 #### Upload files
 
-1. Using AWS SDK
+1. Using AWS SDK and the commands directly
    - https://aws.amazon.com/developer/tools/
-2. Via the code
+2. Via the code, `main.js`
+   - this is what we do
 
 ```js
 const github = require('@actions/github'); // this is for using the other context if needed
 // github.context.
 ```
+
+### 124. Custom JavaScript Action: Real Deployment to AWS S3
+
+#### Add aws access key
+
+1. AWS -> My Account -> Security credentials -> Create access key
+2. Add them to Github Repo -> Settings -> Secrets -> Actions -> New repository secrets
+   - AWS_ACCESS_KEY_ID
+   - AWS_SECRET_ACCESS_KEY
+
+#### Check the deployment
 
 </details>
