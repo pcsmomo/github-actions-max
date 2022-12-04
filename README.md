@@ -485,6 +485,14 @@ const github = require('@actions/github'); // this is for using the other contex
    - AWS_ACCESS_KEY_ID
    - AWS_SECRET_ACCESS_KEY
 
-#### Check the deployment
+#### Check after the deployment
+
+S3 Bucket (refresh) -> Property -> Static website hosting (on the bottom) -> Go to the website endpoint
+
+### 125. JavaScript Actions & Outputs
+
+for Composite action, output value was in the `action.yml` file, \
+but for JavaScript action, the output values will be in the js file, `main.js` \
+only the variable names are defined in `action.yml`
 
 </details>
