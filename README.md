@@ -525,4 +525,12 @@ dist_folder = os.environ['INPUT_DIST-FOLDER']
 
 If your custom Action is stored in a public repository, it can also be published to the GitHub Actions Marketplace as described here: https://docs.github.com/en/actions/creating-actions/publishing-actions-in-github-marketplace#publishing-an-action
 
+## Section 10: Security & Permissions
+
+### 130. Module Introduction
+
+- Securing Your Workflows
+- Working with GitHub Tokens & Permissions
+- Third-Party Permissions
+
 </details>
