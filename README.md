@@ -533,4 +533,12 @@ If your custom Action is stored in a public repository, it can also be published
 - Working with GitHub Tokens & Permissions
 - Third-Party Permissions
 
+### 131. Key Security Concerns
+
+- Script Injection
+- Malicious Third-Party Actions
+  - Only use trusted Actions and inspect code of unknown / untrusted authors
+- Permission Issues
+  - GitHub Actions supports fine-grained permissions control
+
 </details>
