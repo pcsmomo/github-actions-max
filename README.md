@@ -499,4 +499,18 @@ only the variable names are defined in `action.yml`
 
 [Boto3 - AWS SDK for Python](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html)
 
+### 127. Creating a Custom Docker Action
+
+[GitHub Actions Metadata syntax - docker container actions](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#example-using-a-dockerfile-in-your-repository)
+
+```py
+# Docker action automatically generate them with the prefix 'INPUT_'
+# INPUT_
+bucket = os.environ['INPUT_BUCKET']
+bucket_region = os.environ['INPUT_BUCKET-REGION']
+dist_folder = os.environ['INPUT_DIST-FOLDER']
+```
+
+> `boto3` automatically looks for `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
+
 </details>
