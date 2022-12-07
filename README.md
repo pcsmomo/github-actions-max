@@ -606,4 +606,9 @@ It can be set in Repo -> Settings -> Actions -> General
 3. Push!
    - successfully deployed to the new S3 bucket without aws access keys!!
 
+### 140. More On GitHub Actions Security
+
+- [Using GITHUB_TOKEN](https://docs.github.com/en/actions/security-guides/automatic-token-authentication)
+- [Advanced - Preventing Fork Pull Requests Attacks](https://securitylab.github.com/research/github-actions-preventing-pwn-requests/)
+
 </details>
