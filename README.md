@@ -560,4 +560,11 @@ run: |
 > Solution \
 > use actions or environment variable
 
+### 134. Understanding Permissions & Potential Issues
+
+Add a new issue titled "A new bug" then, [`label-issues-real.yml`](10-security/.github/workflows/label-issues-real.yml) will send \
+a post request to add the "bug" label
+
+[GitHub Actions - Asign permissions to jobs](https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs)
+
 </details>
