@@ -587,6 +587,23 @@ It can be set in Repo -> Settings -> Actions -> General
 ### 138. Example: AWS Permissions
 
 - Create a s3 bucket, "gha-security-hosting-demo"
+  - as the same as the steps on `121. Creating a S3 Bucket (for a more advanced, custom Action)`
+  - public
+  - static web hosting
+  - add permision
 - and we will use `.github/workflows/deploy.yml` from the section 09
+
+### 139. Example: AWS Permissions (Continued)
+
+1. [Add the identify provider to AWS](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services#adding-the-identity-provider-to-aws)
+   - Following the [AWS Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html)
+   - AWS Console -> IAM -> Identify provider -> OpenID Connect
+     - And Assign Role
+       - S3 full access
+       - Role name: GitHubDemo1
+2. change the `.github/workflows/deploy.yml`
+   - the deploy file is from section 09, so we can test it with the example in that section
+3. Push!
+   - successfully deployed to the new S3 bucket without aws access keys!!
 
 </details>
