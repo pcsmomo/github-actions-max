@@ -580,4 +580,8 @@ a post request to add the "bug" label
 
 It can be set in Repo -> Settings -> Actions -> General
 
+### 137. Working with Third-Party Permissions & OpenID Connect
+
+[GitHub Action OpenID Connect](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect)
+
 </details>
