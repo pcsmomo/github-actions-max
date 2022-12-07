@@ -584,4 +584,9 @@ It can be set in Repo -> Settings -> Actions -> General
 
 [GitHub Action OpenID Connect](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect)
 
+### 138. Example: AWS Permissions
+
+- Create a s3 bucket, "gha-security-hosting-demo"
+- and we will use `.github/workflows/deploy.yml` from the section 09
+
 </details>
